@@ -1,0 +1,27 @@
+/**
+ * @name Bigger Pix
+ * @version 2
+ * @author djxnzi
+ * @description Accessibility theme to make certain pictures bigger
+*/
+
+.avatar_f9f2ca {
+    width: 72px !important;
+    height: 72px !important;
+    background-size: cover !important;
+    border-radius: 50%;
+}
+.header_f9f2ca, .container_b558d0 {
+    padding-left: 32px !important;
+}
+.messageContent_f9f2ca {
+    padding-left: 104px !important;
+}
+.emoji {
+    width: 2rem;
+    height: 2rem;
+}
+.activityEmoji_a31c43 {
+    width: 1rem;
+    height: 1rem;
+}
