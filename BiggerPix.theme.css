@@ -16,6 +16,7 @@
 }
 .messageContent_f9f2ca {
     padding-left: 104px !important;
+    min-height: 16px;
 }
 .emoji {
     width: 2rem;
