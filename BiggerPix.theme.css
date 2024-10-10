@@ -1,24 +1,23 @@
 /**
  * @name Bigger Pix
- * @version 2
+ * @version 3
  * @author djxnzi
  * @description Accessibility theme to make certain pictures bigger
 */
 
 .avatar_f9f2ca {
-    width: 72px !important;
-    height: 72px !important;
-    background-size: cover !important;
+    width: 72px;
+    height: 72px;
+    background-size: cover;
     border-radius: 50%;
 }
-.header_f9f2ca, .container_b558d0 {
-    padding-left: 32px !important;
+.message_d5deea .contents_f9f2ca, .message_d5deea .container_b558d0 {
+    margin-left: 25px!important;
 }
-.messageContent_f9f2ca {
-    padding-left: 104px !important;
-    min-height: 16px;
+.messageListItem_d5deea:has(.groupStart_d5deea){
+  padding-top: 15px;
 }
-.emoji {
+.message_d5deea .messageContent_f9f2ca .emoji {
     width: 2rem;
     height: 2rem;
 }
