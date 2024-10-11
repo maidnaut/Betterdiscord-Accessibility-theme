@@ -1,6 +1,6 @@
 /**
  * @name Bigger Pix
- * @version 3
+ * @version 2
  * @author djxnzi
  * @description Accessibility theme to make certain pictures bigger
 */
@@ -24,4 +24,8 @@
 .activityEmoji_a31c43 {
     width: 1rem;
     height: 1rem;
+}
+.repliedTextPreview_f9f2ca .emoji{
+    width: 20px !important;
+    height: 20px !important;
 }
