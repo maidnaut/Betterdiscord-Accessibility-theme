@@ -11,8 +11,8 @@
     background-size: cover;
     border-radius: 50%;
 }
-.message__5126c .contents_f9f2ca, .cozy_c19a55 .contents_c19a55, .visualMediaItemContainer_f4758a {
-    margin-left: 25px!important;
+.message__5126c .contents_f9f2ca, .cozy_c19a55 .contents_c19a55, .container_b7e1cb {
+    margin-left: 25px;
 }
 .messageListItem_d5deea:has(.groupStart_d5deea){
   padding-top: 15px;
@@ -26,6 +26,6 @@
     height: 1rem;
 }
 .repliedTextPreview_f9f2ca .emoji{
-    width: 20px !important;
-    height: 20px !important;
+    width: 20px;
+    height: 20px;
 }
