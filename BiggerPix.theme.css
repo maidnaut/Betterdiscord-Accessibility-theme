@@ -5,19 +5,19 @@
  * @description Accessibility theme to make certain pictures bigger
 */
 
-.avatar_f9f2ca {
+.avatar_c19a55 {
     width: 72px;
     height: 72px;
     background-size: cover;
     border-radius: 50%;
 }
-.message_d5deea .contents_f9f2ca, .message_d5deea .container_b558d0 {
+.message__5126c .contents_f9f2ca, .cozy_c19a55 .contents_c19a55 {
     margin-left: 25px!important;
 }
 .messageListItem_d5deea:has(.groupStart_d5deea){
   padding-top: 15px;
 }
-.message_d5deea .messageContent_f9f2ca .emoji {
+.message__5126c .messageContent_c19a55 .emoji {
     width: 2rem;
     height: 2rem;
 }
