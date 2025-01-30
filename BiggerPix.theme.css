@@ -11,7 +11,7 @@
     background-size: cover;
     border-radius: 50%;
 }
-.message__5126c .contents_f9f2ca, .cozy_c19a55 .contents_c19a55 {
+.message__5126c .contents_f9f2ca, .cozy_c19a55 .contents_c19a55, .visualMediaItemContainer_f4758a {
     margin-left: 25px!important;
 }
 .messageListItem_d5deea:has(.groupStart_d5deea){
