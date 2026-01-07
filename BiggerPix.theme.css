@@ -135,3 +135,11 @@
         padding-left: 8px;
     }
 }
+
+/* Typing indicator */
+[class*="inTextChannel"] {
+    [class*="typing"]{
+        padding-left: 80px;
+        opacity: 0.75;
+    }
+}
