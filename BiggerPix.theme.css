@@ -1,6 +1,6 @@
 /**
  * @name Bigger Pix
- * @version 3
+ * @version 3.1
  * @author djxnzi
  * @description Accessibility theme to make avatars and emojis bigger, and adjust containers accordingly
 */
@@ -14,100 +14,88 @@
 /* Message Box */
 [class*="message"] {
     padding-right: 32px;
+}
 
-    /* Avatar */
-    [class*="avatar"] {
-        width: var(--msg-avi-size);
-        height: var(--msg-avi-size);
-        background-size: cover;
-        border-radius: 50%;
-    }
+[class*="message"] [class*="avatar"] {
+    width: var(--msg-avi-size);
+    height: var(--msg-avi-size);
+    background-size: cover;
+    border-radius: 50%;
+}
 
-    /* Replies */
-    [class*="repliedMessage"] {
-        position: relative;
-        left: 30px;
-    }
-    [class*="repliedTextPreview"] {
-        position: relative;
-        left: 0px;
-        width: auto;
-        z-index: 9999;
-    }
+[class*="message"] [class*="repliedMessage"] {
+    position: relative;
+    left: 30px;
+}
 
+[class*="message"] [class*="repliedTextPreview"] {
+    position: relative;
+    left: 0px;
+    width: auto;
+    z-index: 9999;
+}
 
-    /* Fix mention background */
-    [class*="mentioned"] {
-        background: none !important;
-        position: relative;
-    }
-    [class*="mentioned"]::before {
-        content: "";
-        position: absolute;
-        left: 0; right: 0; bottom: 0;
-        top: 20px;
-        z-index: -1;
-        height: 92px;
-    }
-    [class*="mentioned"]::after {
-        content: "";
-        position: absolute;
-        left: 0; right: 0; bottom: 0;
-        top: 20px;
-        background: rgba(255, 172, 28,0.1);
-        border-radius: 0px 8px 8px 0px;
-        z-index: -1;
-        min-height: 92px;
-    }
+[class*="message"] [class*="mentioned"] {
+    background: none !important;
+    position: relative;
+}
 
-    /* Text & Embeds */
-    :is(
-        & [class*="messageContent"],
-        & [class*="container"]
-    ) {
+[class*="message"] [class*="mentioned"]::before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    top: 20px;
+    z-index: -1;
+    height: 92px;
+}
 
-        position: relative;
-        left: 32px !important;
-    }
+[class*="message"] [class*="mentioned"]::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    top: 20px;
+    background: rgba(255, 172, 28,0.1);
+    border-radius: 0px 8px 8px 0px;
+    z-index: -1;
+    min-height: 92px;
+}
 
-    /* Fix audio control overflow */
-    [class*="audioControls"] {
-        width: calc(100% - 16px);
+[class*="message"] [class*="messageContent"],
+[class*="message"] [class*="container"] {
+    position: relative;
+    left: 32px !important;
+}
 
-        [class*=olumeSliderWrapper] {
-            margin-left: -28px !important;
-        }
-        [class*="volumeButton"] {
-            margin-left: -24px;
-            padding-right: 12px;
+[class*="message"] [class*="audioControls"] {
+    width: calc(100% - 16px);
+}
 
-        }
-    }
+[class*="message"] [class*="audioControls"] [class*=olumeSliderWrapper] {
+    margin-left: -28px !important;
+}
 
-    /* User Area */
-    [class*="header"] {
-        position: relative;
-        left: 16px;
-        [class*="headerText"] {
-            margin-right: -48px;
-        }
-    }
-    [class*="messageListItem"]:has([class*="groupStart"]){
-        padding-top: 15px;
-    }
+[class*="message"] [class*="audioControls"] [class*="volumeButton"] {
+    margin-left: -24px;
+    padding-right: 12px;
+}
 
-    /* Emoji */
-    [class*="messageContent"] [class*="emoji"] {
-        width: var(--emoji-size);
-        height: var(--emoji-size);
-    }
-    [class*="emojiJumbo"] {
-        padding-bottom: 16px;
-    }
-    [class*="repliedTextPreview"] [class*="emoji"] {
-        width: 20px;
-        height: 20px;
-    }
+[class*="message"] [class*="header"] {
+    position: relative;
+    left: 16px;
+}
+
+[class*="message"] [class*="messageContent"] [class*="emoji"] {
+    width: var(--emoji-size);
+    height: var(--emoji-size);
+}
+
+[class*="message"] [class*="emojiJumbo"] {
+    padding-bottom: 16px;
+}
+
+[class*="message"] [class*="repliedTextPreview"] [class*="emoji"] {
+    width: 20px;
+    height: 20px;
 }
 
 /* Scroller Spacer */
@@ -116,30 +104,29 @@
 }
 
 /* Sidebar */
-[class*="member"] {
-    [class*="memberInner"] {
-        padding: 0 !important;
-        position: relative;
-        top: 0;
-        left: 0;
-        height: 48px;
-    }
-    [class*="svg"] {
-        width: var(--side-avi-size);
-        height: var(--side-avi-size);
-        background-size: cover;
-        border-radius: 50%;
-        margin-top: -6px;
-    }
-    [class*="content"] {
-        padding-left: 8px;
-    }
+[class*="member"] [class*="memberInner"] {
+    padding: 0 !important;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 48px;
+}
+
+[class*="member"] [class*="svg"] {
+    width: var(--side-avi-size);
+    height: var(--side-avi-size);
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+[class*="member"] [class*="content"] {
+    padding-left: 8px;
 }
 
 /* Typing indicator */
-[class*="inTextChannel"] {
-    [class*="typing"]{
-        padding-left: 80px;
-        opacity: 0.75;
-    }
+[class*="inTextChannel"] [class*="typing"] {
+    padding-left: 80px;
+    opacity: 0.75;
 }
+
